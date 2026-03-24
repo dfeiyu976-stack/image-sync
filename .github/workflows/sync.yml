@@ -18,12 +18,12 @@ jobs:
       - name: 拉取并推送到阿里云
         run: |
           # 1. 让 GitHub 从 Docker Hub 拉取目标镜像
-          docker pull fluent/fluent-bit:v2.1.0
+          docker pull fluent/fluent-bit:2.1.0
           
           # 2. 给镜像重新打标签，准备推送到阿里云
           # 注意：把 registry.cn-hangzhou.aliyuncs.com 换成你的区域地址
           # 注意：把 my-k8s-images 换成你在阿里云创建的命名空间
-          docker tag fluent/fluent-bit:v2.1.0 registry.cn-beijing.aliyuncs.com/wordpress-duanfeiyu/fluent-bit:v2.1.0
+          docker tag fluent/fluent-bit:2.1.0 registry.cn-beijing.aliyuncs.com/wordpress-duanfeiyu/fluent-bit:2.1.0
           
           # 3. 将打好标签的镜像推送到阿里云
-          docker push registry.cn-beijing.aliyuncs.com/wordpress-duanfeiyu/fluent-bit:v2.1.0
+          docker push registry.cn-beijing.aliyuncs.com/wordpress-duanfeiyu/fluent-bit:2.1.0
