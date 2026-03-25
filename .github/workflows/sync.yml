@@ -16,6 +16,6 @@ jobs:
 
       - name: 拉取并推送 ingress-nginx controller 镜像
         run: |
-          docker pull registry.k8s.io/ingress-nginx/controller:1.3.0
-          docker tag registry.k8s.io/ingress-nginx/controller:1.3.0 registry.cn-beijing.aliyuncs.com/wordpress-duanfeiyu/ingress-nginx-controller:1.3.0
-          docker push registry.cn-beijing.aliyuncs.com/wordpress-duanfeiyu/ingress-nginx-controller:1.3.0
+          docker pull registry.k8s.io/ingress-nginx/controller:v1.3.0
+          docker tag registry.k8s.io/ingress-nginx/controller:v1.3.0 registry.cn-beijing.aliyuncs.com/wordpress-duanfeiyu/ingress-nginx-controller:v1.3.0
+          docker push registry.cn-beijing.aliyuncs.com/wordpress-duanfeiyu/ingress-nginx-controller:v1.3.0
