@@ -16,6 +16,6 @@ jobs:
 
       - name: 拉取并推送 nginx 镜像
         run: |
-          docker pull nginx:1.28.3
-          docker tag nginx:1.28.3 registry.cn-beijing.aliyuncs.com/wordpress-duanfeiyu/nginx:1.28.3
-          docker push registry.cn-beijing.aliyuncs.com/wordpress-duanfeiyu/nginx:1.28.3
+          docker pull nginx:1.29.7
+          docker tag nginx:1.29.7 registry.cn-beijing.aliyuncs.com/wordpress-duanfeiyu/nginx:1.29.7
+          docker push registry.cn-beijing.aliyuncs.com/wordpress-duanfeiyu/nginx:1.29.7
