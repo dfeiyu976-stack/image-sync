@@ -14,8 +14,8 @@ jobs:
           username: ${{ secrets.ALIYUN_USERNAME }}
           password: ${{ secrets.ALIYUN_PASSWORD }}
 
-      - name: 拉取并推送 kube-webhook-certgen 镜像
+      - name: 拉取并推送 nginx 镜像
         run: |
-          docker pull registry.k8s.io/ingress-nginx/kube-webhook-certgen:v1.1.1
-          docker tag registry.k8s.io/ingress-nginx/kube-webhook-certgen:v1.1.1 registry.cn-beijing.aliyuncs.com/wordpress-duanfeiyu/kube-webhook-certgen:v1.1.1
-          docker push registry.cn-beijing.aliyuncs.com/wordpress-duanfeiyu/kube-webhook-certgen:v1.1.1
+          docker pull nginx:1.28.3
+          docker tag nginx:1.28.3 registry.cn-beijing.aliyuncs.com/wordpress-duanfeiyu/nginx:1.28.3
+          docker push registry.cn-beijing.aliyuncs.com/wordpress-duanfeiyu/nginx:1.28.3
